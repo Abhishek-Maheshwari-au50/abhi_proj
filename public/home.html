@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <h1>This is Home Page</h1>
+    <h2>Enter the details of a student</h2>
+    <h3>This Page will be displayed after login</h3>
+
+    <form action="/add" method="post">
+        <label for="name">Enter the student Name :</label>
+        <input type="text" name="stname" placeholder="Enter the student name...">
+        <br>
+        <br>
+
+        <label for="name">Enter the Father's Name :</label>
+        <input type="text" name="fname" placeholder="Enter the father's name...">
+        <br>
+        <br>
+
+        <label for="contact">Enter the Contact Number : </label>
+        <input type="number" name="contactnumber" placeholder="Enter the Mobile Number.....">
+        <br>
+        <br>
+
+        <label for="name">Enter the Course Name :</label>
+        <input type="text" name="coursename" placeholder="Enter the Course name...">
+        <br>
+        <br>
+
+        <button>ADD Details</button>
+        <br>
+    </form>
+
+    <form action="/logout" method="post">
+        <button>Logout</button>
+    </form>
+
+    <button onclick="fetchdata()">API</button>
+</body>
+</html>
